@@ -1,0 +1,33 @@
+body {
+    background-color:#161925;
+    color:white;
+}
+
+article {
+    display:flex;
+}
+
+article > div {
+    background-color: grey;
+    width:350px;
+    margin:10px;
+    text-align:center;
+    
+}
+
+div > p {
+    line-height:0.1em;
+}
+
+div > h4 {
+    line-height:1em;
+}
+
+div > h6{
+    font-size:7px;
+    line-height:0.1em;
+}
+
+.border {
+    border:solid 1px white;
+}
