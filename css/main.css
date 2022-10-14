@@ -31,3 +31,12 @@ div > h6{
 .border {
     border:solid 1px white;
 }
+
+.border > div {
+    flex-basis:40px
+}
+
+#column {
+    flex-direction: column;
+}
+
