@@ -1,19 +1,38 @@
+/* Give the body a nice background color */
+
 body {
     background-color:#161925;
     color:white;
 }
 
-article {
-    display:flex;
+/* Create a class and an id for centering text */
+
+.center {
+    text-align:center;
 }
 
-article > div {
+#textcenter {
+    text-align:center;
+}
+
+/* Create a class to center content */
+
+#contentcenter {
+    align-self:center;
+}
+
+article > div{
     background-color: grey;
     width:350px;
     margin:10px;
-    text-align:center;
-    
 }
+
+article > div > h2 {
+    text-align:center;
+}
+
+/* Change line height for Paragraphs, h4 and h6 so they are not
+spread so far apart */
 
 div > p {
     line-height:0.1em;
@@ -28,15 +47,94 @@ div > h6{
     line-height:0.1em;
 }
 
+/* Create a white border */
+
 .border {
+    border:solid 1px white;
+    display:flex;
+}
+
+.headborder {
     border:solid 1px white;
 }
 
+/* Give the divs inside of the border flex basis */
+
+.headborder > div {
+    flex-basis:40px;
+}
+
 .border > div {
-    flex-basis:40px
+    display:flex;
+    flex-basis:40px;
+    background-color: #363955;
+    width:100px;
+    margin:10px;
 }
 
-#column {
+.border2 {
+    border:solid 1px white;
+    display:flex;
+}
+
+.border2 > div {
+    display:flex;
+    flex-basis:40px;
+    background-color:#363955;
+    width:150px;
+    margin:10px;
+}
+
+#flex {
+    display:flex;
+}
+
+/* Direction Example */
+
+.column {
+    display:flex;
     flex-direction: column;
+    text-align:center;
 }
 
+/* Justify Examples */
+
+.start {
+    display:flex;
+    justify-content:start;
+}
+
+.end {
+    display:flex;
+    justify-content:end;
+}
+
+.around {
+    display:flex;
+    justify-content:space-around;
+}
+
+.between {
+    display:flex;
+    justify-content:space-between;
+}
+
+/* Flex Item Examples */
+
+.grow {
+    display:flex;
+}
+
+.self {
+    display:flex;
+}
+
+.self2 {
+    display:flex;
+    align-self:center;
+    overflow:auto;
+}
+
+.order {
+    display:flex;
+}

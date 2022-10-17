@@ -9,77 +9,123 @@
     </head>
 
     <body>
-        <h1>What is a Flex Box?</h1>
+        <h1 class="center">What is a Flex Box?</h1>
     
         <article>
-            <div class="border">
-                <div><h4>A Flex Box is a module that makes it easier to design a more flexible and responsive layout
+            <div class="headborder">
+                <div class="center"><h4>A Flex Box is a module that makes it easier to design a more flexible and responsive layout
                 without the use of float or positioning (these sentences are in a flex box!)</h4></div>
-                <div><h6>Thank you W3 for the explanation.</h6></div>
+                <div class="center"><h6><i>Thank you W3 for the explanation.</i></h6></div>
+            </div>
+
+            <div class="headborder">
+                <div class="center"><h2>This is a Flex Container.</h2></div>
+                <div class="center"><p>This is the default Flex Container.</p></div>
+                <div class="center"><p>It is pretty cool.</p></div>
+            </div>
+        </article>
+
+        <br>
+        <hr>
+        <br>
+
+        <h1 class="center">Flex Container Examples</h1>
+
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+
+        <h2 class="center">Direction Example</h2>
+        <article>
+
+            <div class="border">
+                <div class="center"><h2>Column</h2></div>
+                <hr>
+                <div class="column"><h4>1</h4></div>
+                <div class="column"><h4>2</h4></div>
+                <div class="column"><h4>3</h4></div>
+            </div>
+        </article>
+
+        <br>
+        <hr>
+        <br>
+
+        <article id="contentcenter">
+            <h2 class="center">Justify Examples</h2>
+
+                <div class="border">
+                    <div class="center"><h2>Start</h2></div>
+                    <hr>
+                    <div class="start"><h4>1</h4></div>
+                    <div class="start"><h4>2</h4></div>
+                    <div class="start"><h4>3</h4></div>
+                </div>
+
+                <div class="border">
+                    <div class="center"><h2>End</h2></div>
+                    <hr>
+                    <div class="end"><h4>1</h4></div>
+                    <div class="end"><h4>2</h4></div>
+                    <div class="end"><h4>3</h4></div>
+                </div>
+
+                <div class="border">
+                    <div class="center"><h2>Space Around</h2></div>
+                    <hr>
+                    <div class="around"><h4>1</h4></div>
+                    <div class="around"><h4>2</h4></div>
+                    <div class="around"><h4>3</h4></div>
+                </div>
+
+                <div class="border">
+                    <div class="center"><h2>Space Between</h2></div>
+                    <hr>
+                    <div class="between"><h4>1</h4></div>
+                    <div class="between"><h4>2</h4></div>
+                    <div class="between"><h4>3</h4></div>
+                </div>
+        </article>
+
+        <br>
+        <hr>
+        <br>
+
+        <h1 class="center">Flex Item Examples</h1>
+
+        <article>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+
+            <div class="border">
+                <div class="center"><h2>Flex Grow</h2></div>
+                <hr>
+                <div class="grow"><h4>1</h4></div>
+                <div class="grow" style="flex-grow:8;"><h4>2</h4></div>
+                <div class="grow"><h4>3</h4></div>
+            </div>
+
+            <div class="border2">
+                <div class="center"><h2>Flex align-self</h2></div>
+                <hr>
+                <div class="self"><h4>1</h4></div>
+                <div class="self2"><h4>1</h4></div>
+                <div class="self"><h4>1</h4></div>
             </div>
 
             <div class="border">
-                <div><h2>This is a Flex Container.</h2></div>
-                <div><p>This is the default Flex Container.</p></div>
-                <div><p>It is pretty cool.</p></div>
+                <div class="center"><h2>Flex Order</h2></div>
+            <hr>
+            <div class="order" style="order:2"><h4>1</h4></div>
+            <div class="order" style="order:3"><h4>2</h4></div>
+            <div class="order" style="order:1"><h4>3</h4></div>
             </div>
         </article>
 
-        <br>
-        <hr>
-        <br>
-
-        <h2>Direction Example</h2>
-        <article>
-
-            <div class="border" id="column">
-                <div><h2>Column</h2></div>
-                <div><h4>1</h4></div>
-                <div><h4>2</h4></div>
-                <div><h4>3</h4></div>
-            </div>
-        </article>
-
-        <br>
-        <hr>
-        <br>
-
-        <article>
-            <h2>Justify Examples</h2>
-                <div class="border" id="center">
-                    <div><h2>Centered</h2></div>
-                    <div><h4>1</h4></div>
-                    <div><h4>2</h4></div>
-                    <div><h4>3</h4></div>
-                </div>
-
-                <div class="border" id="start">
-                    <div><h2>Start</h2></div>
-                    <div><h4>1</h4></div>
-                    <div><h4>2</h4></div>
-                    <div><h4>3</h4></div>
-                </div>
-
-                <div class="border" id="end">
-                    <div><h2>End</h2></div>
-                    <div><h4>1</h4></div>
-                    <div><h4>2</h4></div>
-                    <div><h4>3</h4></div>
-                </div>
-
-                <div class="border" id="around">
-                    <div><h2>Space Around</h2></div>
-                    <div><h4>1</h4></div>
-                    <div><h4>2</h4></div>
-                    <div><h4>3</h4></div>
-                </div>
-
-                <div class="border" id="between">
-                    <div><h2>Space Between</h2></div>
-                    <div><h4>1</h4></div>
-                    <div><h4>2</h4></div>
-                    <div><h4>3</h4></div>
-                </div>
-        </article>
     </body>
 </html>
