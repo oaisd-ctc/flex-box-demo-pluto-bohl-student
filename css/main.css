@@ -25,6 +25,7 @@ article > div{
     background-color: grey;
     width:350px;
     margin:10px;
+    justify-content:center;
 }
 
 article > div > h2 {
@@ -34,9 +35,9 @@ article > div > h2 {
 /* Change line height for Paragraphs, h4 and h6 so they are not
 spread so far apart */
 
-div > p {
+/* div > p {
     line-height:0.1em;
-}
+} */
 
 div > h4 {
     line-height:1em;
@@ -44,49 +45,13 @@ div > h4 {
 
 div > h6{
     font-size:7px;
-    line-height:0.1em;
+    /* line-height:0.1em; */
 }
 
 /* Create a white border */
 
-.border {
+.flex-containerhead {
     border:solid 1px white;
-    display:flex;
-}
-
-.headborder {
-    border:solid 1px white;
-}
-
-/* Give the divs inside of the border flex basis */
-
-.headborder > div {
-    flex-basis:40px;
-}
-
-.border > div {
-    display:flex;
-    flex-basis:40px;
-    background-color: #363955;
-    width:100px;
-    margin:10px;
-}
-
-.border2 {
-    border:solid 1px white;
-    display:flex;
-}
-
-.border2 > div {
-    display:flex;
-    flex-basis:40px;
-    background-color:#363955;
-    width:150px;
-    margin:10px;
-}
-
-#flex {
-    display:flex;
 }
 
 /* Direction Example */
@@ -138,3 +103,66 @@ div > h6{
 .order {
     display:flex;
 }
+
+/* Test W3 Things */
+
+.flex-container {
+    display:flex;
+    background-color:#262935;
+    width:500px;
+}
+
+.flex-containerhead {
+    display:flex;
+    background-color:#262935;
+    width:1000px;
+}
+
+.flex-containercol {
+    display:flex;
+    flex-direction:column;
+    background-color: #262935;
+    width:500px;
+}
+
+.flex-containercol > div {
+    background-color:#363955;
+    width:100px;
+    margin:10px;
+    text-align:center;
+    padding:20px;
+    font-size:30px;
+}
+
+.flex-containerstart {
+    display:flex;
+    background-color:#262935;
+    justify-content:flex-start;
+    width:700px;
+}
+
+.flex-containerstart > div {
+    background-color:#363955;
+    width:100px;
+    margin:10px;
+    text-align:center;
+    padding:20px;
+    font-size:30px;
+}
+
+.flex-container > div {
+    background-color:#363955;
+    margin:10px;
+    padding:20px;
+    font-size:30px;
+}
+
+.flex-containerhead > div {
+    background-color:#363955;
+    margin:10px;
+    padding:20px;
+    font-size:30px;
+    overflow:visible;
+}
+
+/* W3 Works So I'm Going To Use It */
