@@ -25,7 +25,11 @@ article > div{
     background-color: grey;
     width:350px;
     margin:10px;
-    justify-content:center;
+    align-content:center;
+}
+
+article {
+    align-content:center;
 }
 
 article > div > h2 {
@@ -78,15 +82,15 @@ div > h6{
     background-color:#262935;
     width:1000px;
     border:1px solid white;
-    justify-content:flex-end;
+    align-content:flex-end;
 }
 
 .flex-containerar {
     display:flex;
+    align-content:space-around;
     background-color:#262935;
-    width:700px;
+    width:800px;
     border:1px solid white;
-    justify-content: space-around;
 }
 
 .flex-containerbt {
@@ -119,12 +123,21 @@ div > h6{
     border:1px solid white;
 }
 
-.flex-containerwrr {
+.flex-containeralc {
     display:flex;
+    align-items:center;
     background-color:#262935;
     width:700px;
-    border:1px solid #161925;
-    flex-wrap:reverse;
+    height:200px;
+    border:1px solid white;
+}
+
+.flex-containerend1 {
+    display:flex;
+    align-items:flex-end;
+    background-color:#262935;
+    width:800px;
+    border:1px solid white;
 }
 
 .flex-containercol > div {
@@ -141,7 +154,7 @@ div > h6{
     font-size:25px;
 }
 
-.flex-containerstart {
+/* .flex-containerstart {
     display:flex;
     background-color:#262935;
     justify-content:flex-start;
@@ -157,7 +170,7 @@ div > h6{
     padding:20px;
     font-size:30px;
     border:1px solid #161925;
-}
+} */
 
 .flex-container > div {
     background-color:#363955;
@@ -229,14 +242,22 @@ div > h6{
     font-size:25px;
 }
 
-.flex-containerwrr > div {
+.flex-containeralc > div {
     background-color:#363955;
     width:100px;
     margin:10px;
-    padding:20px;
-    font-size:107x;
+    font-size:20px;
     text-align:center;
     border:1px solid #161925;
+}
+
+.flex-containerend1 > div {
+    background-color:#363955;
+    width:100px;
+    margin:10px;
+    font-size:30px;
+    text-align:center;
+    border:1px solid #161925
 }
 
 .flex-containerhead > div {
