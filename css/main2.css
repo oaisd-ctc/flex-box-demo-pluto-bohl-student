@@ -1,3 +1,62 @@
 body {
     align-content:center;
+    text-align:center;
+    background-color:#161925;
+    color:white;
 }
+
+/* I cant get the flex box's to center
+and its unironically making me really mad */
+
+/* I already had to start over because nothing
+would work for me, and that made me mad to begin with */
+
+
+
+/* Classes */
+
+.flex-container {
+    display:flex;
+    background-color:#262935;
+    width:231px;
+    border:1px solid white;
+}
+
+/* Id's */
+
+#column {
+    flex-direction:column;
+}
+
+#column-reverse {
+    flex-direction:column-reverse;
+    position:relative;
+    left:249px;
+    bottom:453px;
+}
+
+#row-reverse {
+    flex-direction:row-reverse;
+    position:relative;
+    width:500px;
+    left:495px;
+    bottom:923px;
+}
+
+#explaindirection {
+    width:550px;
+    position:relative;
+    left:495px;
+    bottom:910px;
+}
+
+/* Divs */
+
+.flex-container > div {
+    background-color:#363955;
+    margin:10px;
+    padding:20px;
+    font-size:30px;
+    border:1px solid #161925;
+}
+
