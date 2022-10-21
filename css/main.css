@@ -1,176 +1,134 @@
-/* Give the body a nice background color */
-
 body {
+    align-content:center;
+    text-align:center;
     background-color:#161925;
     color:white;
 }
 
-/* Create a class and an id for centering text */
+/* I cant get the flex box's to center
+and its unironically making me really mad */
 
-.center {
-    text-align:center;
-}
+/* I already had to start over because nothing
+would work for me, and that made me mad to begin with */
 
-#textcenter {
-    text-align:center;
-}
+/* Now I have to do this on a chromebook at midnight the day it's due
+because I had to start over. */
 
-/* Create a class to center content */
-
-#contentcenter {
-    align-self:center;
-}
-
-article > div{
-    background-color: grey;
-    width:350px;
-    margin:10px;
-    align-content:center;
-}
-
-article {
-    align-content:center;
-}
-
-article > div > h2 {
-    text-align:center;
-}
-
-/* Change line height for Paragraphs, h4 and h6 so they are not
-spread so far apart */
-
-/* div > p {
-    line-height:0.1em;
-} */
-
-div > h4 {
-    line-height:1em;
-}
-
-div > h6{
-    font-size:7px;
-    /* line-height:0.1em; */
-}
-
-/* Create a white border */
-
-.flex-containerhead {
-    border:solid 1px white;
-}
-
-/* Direction Example */
-
-/* Flex Item Examples */
-
-/* Test W3 Things */
+/* Classes */
 
 .flex-container {
     display:flex;
     background-color:#262935;
-    width:700px;
+    width:231px;
     border:1px solid white;
 }
 
-.flex-containerhead {
-    display:flex;
-    background-color:#262935;
-    width:1000px;
+/* Id's */
+
+#exflex {
+    position:absolute;
+    left:823px;
+    top:115px;
 }
 
-.flex-containerend {
-    display:flex;
-    background-color:#262935;
-    width:1000px;
-    border:1px solid white;
-    align-content:flex-end;
+/* Yes, I know using relative positioning is not
+the best idea but its genuinely the only way I could
+get things to go where I wanted them to go */
+
+#column {
+    flex-direction:column;
 }
 
-.flex-containerar {
-    display:flex;
-    align-content:space-around;
-    background-color:#262935;
+#column-reverse {
+    flex-direction:column-reverse;
+    position:absolute;
+    left:253px;
+    bottom:78px;
+}
+
+#row-reverse {
+    flex-direction:row-reverse;
+    position:absolute;
+    width:500px;
+    left:497px;
+    bottom:450px;
+}
+
+#explaindirection {
+    width:550px;
+    position:absolute;
+    left:497px;
+    bottom:32px;
+}
+
+
+
+#just-center {
+    width:650px;
+    justify-content:center;
+}
+
+#just-flexstart {
+    width:650px;
+    justify-content:flex-start;
+}
+
+#just-flexend {
+    width:650px;
+    justify-content:flex-end;
+}
+
+#just-around {
     width:800px;
-    border:1px solid white;
+    justify-content:space-around;
 }
 
-.flex-containerbt {
-    display:flex;
-    background-color:#262935;
-    width:700px;
-    border:1px solid white;
+#just-between {
+    width:800px;
     justify-content:space-between;
 }
 
-.flex-containercol {
-    display:flex;
-    flex-direction:column;
-    background-color: #262935;
-    width:700px;
-    border:1px solid white;
-}
 
-.flex-containerself {
-    display:flex;
-    background-color:#262935;
-    width:700px;
-    border:1px solid white;
-}
 
-.flex-containerorder {
-    display:flex;
-    background-color:#262935;
-    width:700px;
-    border:1px solid white;
-}
-
-.flex-containeralc {
-    display:flex;
-    align-items:center;
-    background-color:#262935;
-    width:700px;
-    height:200px;
-    border:1px solid white;
-}
-
-.flex-containerend1 {
-    display:flex;
-    align-items:flex-end;
-    background-color:#262935;
+#align-center {
     width:800px;
-    border:1px solid white;
+    height:150px;
+    align-items:center;
 }
 
-.flex-containercol > div {
-    background-color:#363955;
-    width:100px;
-    margin:10px;
-    text-align:center;
-    padding:20px;
-    font-size:30px;
-    border:1px solid #161925;
+#align-flexstart {
+    width:800px;
+    height:150px;
+    align-items:flex-start;
 }
 
-.flex-containerar > div > h2 {
-    font-size:25px;
+#align-flexend {
+    width:800px;
+    height:150px;
+    align-items:flex-end;
 }
 
-/* .flex-containerstart {
-    display:flex;
-    background-color:#262935;
-    justify-content:flex-start;
-    width:1000px;
-    border:1px solid white;
+#align-stretch {
+    width:800px;
+    height:150px;
+    align-items:stretch;
 }
 
-.flex-containerstart > div {
-    background-color:#363955;
-    width:100px;
-    margin:10px;
-    text-align:center;
-    padding:20px;
-    font-size:30px;
-    border:1px solid #161925;
-} */
+
+
+#order {
+    width:375px;
+}
+
+#grow {
+    width:575px;
+}
+
+#basis {
+    width:575px;
+}
+
+/* Divs */
 
 .flex-container > div {
     background-color:#363955;
@@ -180,95 +138,3 @@ div > h6{
     border:1px solid #161925;
 }
 
-.flex-containerend > div {
-    background-color:#363955;
-    margin:10px;
-    padding:20px;
-    font-size:30px;
-    text-align:center;
-    width:100px;
-    border:1px solid #161925;
-}
-
-.flex-containerar > div {
-    background-color:#363955;
-    width:100px;
-    margin:10px;
-    padding:20px;
-    font-size:25px;
-    text-align:center;
-    border:1px solid #161925;
-}
-
-.flex-containerbt > div {
-    background-color:#363955;
-    width:100px;
-    margin:10px;
-    padding:20px;
-    font-size:30px;
-    text-align:center;
-    border:1px solid #161925;
-}
-
-.flex-containerbt > div > h2 {
-    font-size:25px;
-}
-
-.flex-containerself > div {
-    background-color:#363955;
-    width:100px;
-    margin:10px;
-    padding:20px;
-    font-size:30px;
-    text-align:center;
-    border:1px solid #161925;
-}
-
-.flex-containerself > div > h2 {
-    font-size:25px;
-}
-
-.flex-containerorder > div {
-    background-color:#363955;
-    width:100px;
-    margin:10px;
-    padding:20px;
-    font-size:30px;
-    text-align:center;
-    border:1px solid #161925;
-}
-
-.flex-containerorder > div > h2 {
-    font-size:25px;
-}
-
-.flex-containeralc > div {
-    background-color:#363955;
-    width:100px;
-    margin:10px;
-    font-size:20px;
-    text-align:center;
-    border:1px solid #161925;
-}
-
-.flex-containerend1 > div {
-    background-color:#363955;
-    width:100px;
-    margin:10px;
-    font-size:30px;
-    text-align:center;
-    border:1px solid #161925
-}
-
-.flex-containerhead > div {
-    background-color:#363955;
-    margin:10px;
-    padding:20px;
-    font-size:30px;
-    overflow:visible;
-    border:1px solid #161925;
-}
-
-
-
-/* W3 Works So I'm Going To Use It */
