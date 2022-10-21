@@ -1,0 +1,140 @@
+body {
+    align-content:center;
+    text-align:center;
+    background-color:#161925;
+    color:white;
+}
+
+/* I cant get the flex box's to center
+and its unironically making me really mad */
+
+/* I already had to start over because nothing
+would work for me, and that made me mad to begin with */
+
+/* Now I have to do this on a chromebook at midnight the day it's due
+because I had to start over. */
+
+/* Classes */
+
+.flex-container {
+    display:flex;
+    background-color:#262935;
+    width:231px;
+    border:1px solid white;
+}
+
+/* Id's */
+
+#exflex {
+    position:absolute;
+    left:42em;
+    top:7.5em;
+}
+
+/* Yes, I know using relative positioning is not
+the best idea but its genuinely the only way I could
+get things to go where I wanted them to go */
+
+#column {
+    flex-direction:column;
+}
+
+#column-reverse {
+    flex-direction:column-reverse;
+    position:absolute;
+    left:16em;
+    top:26.3em;
+}
+
+#row-reverse {
+    flex-direction:row-reverse;
+    position:absolute;
+    width:500px;
+    left:31em;
+    top:26.3em;
+}
+
+#explaindirection {
+    width:550px;
+    position:absolute;
+    left:31em;
+    top:33em;
+}
+
+
+
+#just-center {
+    width:650px;
+    justify-content:center;
+}
+
+#just-flexstart {
+    width:650px;
+    justify-content:flex-start;
+}
+
+#just-flexend {
+    width:650px;
+    justify-content:flex-end;
+}
+
+#just-around {
+    width:800px;
+    justify-content:space-around;
+}
+
+#just-between {
+    width:800px;
+    justify-content:space-between;
+}
+
+
+
+#align-center {
+    width:800px;
+    height:150px;
+    align-items:center;
+}
+
+#align-flexstart {
+    width:800px;
+    height:150px;
+    align-items:flex-start;
+}
+
+#align-flexend {
+    width:800px;
+    height:150px;
+    align-items:flex-end;
+}
+
+#align-stretch {
+    width:800px;
+    height:150px;
+    align-items:stretch;
+}
+
+
+
+#order {
+    width:375px;
+}
+
+#grow {
+    width:575px;
+}
+
+#basis {
+    width:575px;
+}
+
+/* Divs */
+
+.flex-container > div {
+    background-color:#363955;
+    margin:10px;
+    padding:20px;
+    font-size:30px;
+    border:1px solid #161925;
+}
+
