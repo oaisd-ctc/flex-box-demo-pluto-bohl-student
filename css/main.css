@@ -27,8 +27,8 @@ because I had to start over. */
 
 #exflex {
     position:absolute;
-    left:823px;
-    top:115px;
+    left:42em;
+    top:7.5em;
 }
 
 /* Yes, I know using relative positioning is not
@@ -42,23 +42,23 @@ get things to go where I wanted them to go */
 #column-reverse {
     flex-direction:column-reverse;
     position:absolute;
-    left:253px;
-    bottom:78px;
+    left:16em;
+    top:26.3em;
 }
 
 #row-reverse {
     flex-direction:row-reverse;
     position:absolute;
     width:500px;
-    left:497px;
-    bottom:450px;
+    left:31em;
+    top:26.3em;
 }
 
 #explaindirection {
     width:550px;
     position:absolute;
-    left:497px;
-    bottom:32px;
+    left:31em;
+    top:33em;
 }
 
 
